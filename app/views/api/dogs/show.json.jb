@@ -3,4 +3,5 @@
   name: @dog.name,
   breed: @dog.breed,
   age: @dog.age,
+  user_id: @dog.user_id,
 }

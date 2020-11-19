@@ -4,7 +4,8 @@ class Api::DogsController < ApplicationController
       @dog = Dog.new(
         name: params[:name],
         breed: params[:breed],
-        age: params[:age]
+        age: params[:age],
+        user_id: current_user.id
       )
       @dog.save
       render 'show.json.jb'
